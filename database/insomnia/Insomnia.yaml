@@ -1,0 +1,178 @@
+_type: export
+__export_format: 4
+__export_date: 2020-11-11T19:47:28.416Z
+__export_source: insomnia.desktop.app:v2020.4.2
+resources:
+  - _id: req_112371c870a043278b87d77d7bd185c0
+    parentId: fld_45c02dee1d74403593381ddfcac2fcd4
+    modified: 1605123990316
+    created: 1605117024132
+    url: "{{ URL }}tema"
+    name: index
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1605117024233
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_45c02dee1d74403593381ddfcac2fcd4
+    parentId: wrk_1e3cfd44dd5c42678a69f029a8993db4
+    modified: 1605117017539
+    created: 1605117017539
+    name: Temas
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1605117017539
+    _type: request_group
+  - _id: wrk_1e3cfd44dd5c42678a69f029a8993db4
+    parentId: null
+    modified: 1605104738204
+    created: 1605104738204
+    name: PROJETO ADONIS
+    description: ""
+    scope: null
+    _type: workspace
+  - _id: req_2d9c02f6419a405796b24d69590115e2
+    parentId: fld_45c02dee1d74403593381ddfcac2fcd4
+    modified: 1605121883698
+    created: 1605117746028
+    url: "{{ URL }}tema/2"
+    name: show
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1605113958005.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_cf4401b9422048bdb1dbee688f9c88e2
+    parentId: fld_45c02dee1d74403593381ddfcac2fcd4
+    modified: 1605123998669
+    created: 1605117069262
+    url: "{{ URL }}tema"
+    name: store
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"descricao" : "Delphi"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_ba1ff7bb864e4247bb1f28220909d4fb
+    authentication: {}
+    metaSortKey: -1605110891778.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_18b1416dd7634f67ba1fce4594f4e314
+    parentId: fld_45c02dee1d74403593381ddfcac2fcd4
+    modified: 1605124001718
+    created: 1605117617283
+    url: "{{ URL }}tema/2"
+    name: update
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"descricao" : "NodeJS"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_ba1ff7bb864e4247bb1f28220909d4fb
+    authentication: {}
+    metaSortKey: -1605107825551.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_d0c6c4891c3249879003a5d11cec8ad4
+    parentId: fld_45c02dee1d74403593381ddfcac2fcd4
+    modified: 1605124004549
+    created: 1605117675757
+    url: "{{ URL }}tema/1"
+    name: delete
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_ba1ff7bb864e4247bb1f28220909d4fb
+    authentication: {}
+    metaSortKey: -1605106292437.625
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_61faa650b16403a829ebecc943fdaabb089bf935
+    parentId: wrk_1e3cfd44dd5c42678a69f029a8993db4
+    modified: 1605106769279
+    created: 1605104738443
+    name: Base Environment
+    data:
+      URL: http://localhost:3333/
+    dataPropertyOrder:
+      "&":
+        - URL
+    color: null
+    isPrivate: false
+    metaSortKey: 1605104738443
+    _type: environment
+  - _id: jar_61faa650b16403a829ebecc943fdaabb089bf935
+    parentId: wrk_1e3cfd44dd5c42678a69f029a8993db4
+    modified: 1605104738448
+    created: 1605104738448
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_4717f6e1e74a4b519709e9296136a345
+    parentId: wrk_1e3cfd44dd5c42678a69f029a8993db4
+    modified: 1605104738210
+    created: 1605104738210
+    fileName: PROJETO ADONIS
+    contents: ""
+    contentType: yaml
+    _type: api_spec
